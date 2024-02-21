@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+   <style>
+   
+    .fancy-forms .tab-content{
+background: #ffffff;
+color: #ffffff;
+padding: 10px;
+box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.3);
+}
+
+.fancy-forms .nav-tabs .nav-item{
+width: 50%;
+text-align: center;
+}
+
+.fancy-forms .nav-tabs .nav-link{
+
+border: 1px solid #FF4E84;
+background-color: #FF4E84;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+color: #ffffff;
+box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+}
+
+.fancy-forms .nav-tabs .nav-link.active{
+border-color: #fff;
+color: #FF4E84;
+background-color: #ffffff;
+}
+
+.fancy-forms .nav-tabs .nav-link:hover{
+border-color: #fff;
+}
+
+.fancy-forms .nav-tabs .nav-link.active:hover{
+border-color: #FF4E84;
+}
+
+.fancyformcontainer{
+background: #FF4E84;
+padding: .5rem 3rem !important;
+margin: 3rem !important;
+}
+.fab{
+color: #fff;
+}
+.fab:hover{
+color: blue;
+}
+</style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+   
+       <!-- header start -->
+    <header class="header">
+        <div class="container">
+            <div class="row v-center">
+                <div class="header-item item-left">
+                    <div class="logo">
+                        <a href="#">logo</a>
+                    </div>
+                </div>
+                <!-- menu start here -->
+                <div class="header-item item-center">
+                    <div class="menu-overlay"></div>
+                    <nav class="menu">
+                        <div class="mobile-menu-head">
+                            <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">&times;</div>
+                        </div>
+                        <ul class="menu-main">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                           
+                            <li class="menu-item-has-children">
+                                <a href="#">Shop <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item">
+                                        <h4 class="title">Men's Fashion</h4>
+                                        <ul>
+                                            <li><a href="#">T-Shirts</a></li>
+                                            <li><a href="#">Jeans</a></li>
+                                            <li><a href="#">Suit</a></li>
+                                            <li><a href="#">Kurta</a></li>
+                                            <li><a href="#">Watch</a></li>
+                                        </ul>
+                                        <h4 class="title">Beauty</h4>
+                                        <ul>
+                                            <li><a href="#">Moisturizer</a></li>
+                                            <li><a href="#">Face powder</a></li>
+                                            <li><a href="#">Lipstick</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Women's Fashion</h4>
+                                        <ul>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Sandals</a></li>
+                                            <li><a href="#">Watchs</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                        </ul>
+                                        <h4 class="title">Furniture</h4>
+                                        <ul>
+                                            <li><a href="#">Chairs</a></li>
+                                            <li><a href="#">Tables</a></li>
+                                            <li><a href="#">Doors</a></li>
+                                            <li><a href="#">Bed</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Home, Kitchen</h4>
+                                        <ul>
+                                            <li><a href="#">Kettle</a></li>
+                                            <li><a href="#">Toaster</a></li>
+                                            <li><a href="#">Dishwasher</a></li>
+                                            <li><a href="#">Microwave oven</a></li>
+                                            <li><a href="#">Pitcher</a></li>
+                                            <li><a href="#">Blender</a></li>
+                                            <li><a href="#">Colander</a></li>
+                                            <li><a href="#">Tureen</a></li>
+                                            <li><a href="#">Cookware</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <img src="https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80"
+                                            alt="Chair" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="filterproducts.html">Products</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Login</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu end here -->
+                <div class="header-item item-right">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <!-- mobile menu trigger -->
+                    <div class="mobile-menu-trigger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 mt-4 fancy-forms">
+                     <!-- <div class="cardbox"> -->
+                        <ul class="nav nav-tabs  mt-3" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="login" data-toggle="tab" href="#login_form" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="signup" data-toggle="tab" href="#signup_form" role="tab" aria-controls="signup" aria-selected="false">SignUp</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="login_form" role="tabpanel" aria-labelledby="login">
+                                <div class="fancyformcontainer">
+                                    <h3 class="text-center">Sign in with:</h3>
+                                    <form>
+                                        <div class="text-center mb-3">
+                                            <button type="button" class="btn btn-link btn-floating mx-1">
+                                              <i class="fab fa-facebook-f"></i>
+                                            </button>
+                                    
+                                            <button type="button" class="btn btn-link btn-floating mx-1">
+                                              <i class="fab fa-google"></i>
+                                            </button>
+                                    
+                                          </div>
+                                          <p class="text-center">or:</p>
+                                        <div class="form-group mt-4">
+                                            <label for="email_id">Email address</label>
+                                            <input type="email" class="form-control" id="email_id" placeholder="Enter valid email address">
+                                        </div>
+                                        <div class="form-group mt-4">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" id="password" placeholder="Please provide password">
+                                        </div>
+                                        <!-- 2 column grid layout -->
+                                        <div class="row mb-4">
+                                            <div class="col-md-6 d-flex justify-content-center">
+                                                <!-- Checkbox -->
+                                                <div class="form-check mb-3 mb-md-0">
+                                                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                                    <label class="form-check-label" for="loginCheck"> Remember me </label>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="col-md-6 d-flex justify-content-center">
+                                                <!-- Simple link -->
+                                                <a href="#!" class="text-white">Forgot password?</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-light">Submit</button>
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <p>Not a member? <a href="#!" class="text-white">Register</a></p>
+                                          </div>
+                                      </form>
+                                 </div>
+                               </div>
+                            <div class="tab-pane fade" id="signup_form" role="tabpanel" aria-labelledby="signup">
+                                <div class="fancyformcontainer">
+                                    <h3 class="text-center">Sign Up with:</h3>
+                                    <form>
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-link btn-floating mx-1">
+                                              <i class="fab fa-facebook-f"></i>
+                                            </button>
+                                    
+                                            <button type="button" class="btn btn-link btn-floating mx-1">
+                                              <i class="fab fa-google"></i>
+                                            </button>
+                                
+                                          </div>
+                                          <p class="text-center">or:</p>
+                                          <div class="form-group mt-4">
+                                            <label for="name">Name</label>
+                                            <input type="email" class="form-control" id="name" placeholder="Enter valid Name">
+                                         </div> 
+                                        <div class="form-group mt-4">
+                                            <label for="email_id">Email address</label>
+                                            <input type="email" class="form-control" id="email_id" placeholder="Enter valid email address">
+                                        </div>
+                                        <div class="form-group mt-4">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" id="password" placeholder="Please provide password">
+                                        </div>
+                                        <div class="form-group mt-4">
+                                            <label for="password">Confirm Password</label>
+                                            <input type="password" class="form-control" id="confirm password" placeholder="Please retype password and try again">
+                                        </div>
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                                              aria-describedby="registerCheckHelpText" />
+                                            <label class="form-check-label" for="registerCheck">
+                                              I have read and agree to the terms
+                                            </label>
+                                          </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-light">Submit</button>
+                                        </div>
+    
+                                      </form>
+                                 </div>
+                            </div>
+                        </div>
+                 <!-- 	</div> -->
+                </div>
+            </div>
+        </div>
+
+     <!-- footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+         
+    <!-- Optional JavaScript -->
+    <script src="js.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

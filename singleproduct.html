@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>product</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+
+    .reviewcard .card {
+      background-color: #fff;
+      padding: 14px;
+      border: none
+    }
+
+    .demo {
+      width: 100%
+    }
+
+    /* ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom: 0
+    }
+    
+    li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer
+    } */
+
+    img {
+      display: block;
+      height: auto;
+      width: 100%
+    }
+
+    .stars i {
+      color: #f6d151
+    }
+
+    .stars span {
+      font-size: 13px
+    }
+
+    hr {
+      color: #d4d4d4
+    }
+
+    .listgram ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    .listgram ul li {
+      margin-left: 10px;
+      font-size: 14px;
+      border: 1px solid #111;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+      width: 70px;
+      line-height: 15px;
+    }
+
+    .listgram li a {
+      text-decoration: none;
+      color: #000;
+
+    }
+
+    .listgram li:hover {
+      background: #111;
+      color: #fff;
+    }
+
+    .listgram li:hover a {
+      color: #fff;
+    }
+
+    .badge {
+      padding: 5px !important;
+      padding-bottom: 6px !important
+    }
+
+    .badge i {
+      font-size: 10px
+    }
+
+    .profile-image {
+      width: 35px
+    }
+
+    .comment-ratings i {
+      font-size: 13px
+    }
+
+    .username {
+      font-size: 12px
+    }
+
+    .comment-profile {
+      line-height: 17px
+    }
+
+    .date span {
+      font-size: 12px
+    }
+
+    .p-ratings i {
+      color: #f6d151;
+      font-size: 10px
+    }
+
+    .Rating {
+      font-size: 12px;
+    }
+
+    .btn-long {
+      padding-left: 110px;
+      padding-right: 110px
+    }
+
+    .buttons {
+      margin-top: 15px;
+      margin-left: 10px;
+    }
+
+    .buttons .btn {
+      height: 46px;
+    }
+
+    .buttons input {
+      height: 46px;
+      border: 1px solid #111;
+      border-radius: 5px;
+      width: 100px;
+      padding-left: 10px;
+    }
+
+    .buttons .cart {
+      border-color: #111;
+      color: #111;
+    }
+
+    .buttons .cart:hover {
+      background-color: #111 !important;
+      color: white;
+    }
+
+    .buttons .buy {
+      color: #fff;
+      background-color: #111;
+      border-color: #111;
+    }
+
+    .buttons .buy:focus,
+    .buy:active {
+      color: #fff;
+      background-color: #111;
+      border-color: #111;
+      box-shadow: none
+    }
+
+    .buttons .buy:hover {
+      color: #fff;
+      background-color: #111;
+      border-color: #111;
+    }
+
+    .buttons .wishlist {
+      background-color: #fff;
+      border-color: #111;
+    }
+
+    .buttons .wishlist:hover {
+      background-color: #111;
+      border-color: #111;
+      color: #fff
+    }
+
+    .buttons .wishlist:hover i {
+      color: #fff
+    }
+
+    .buttons .wishlist i {
+      color: #111;
+    }
+
+    .buttons input {
+      background-color: #fff;
+      border-color: #111;
+    }
+
+    .buttons input:hover {
+      background-color: #111;
+      border-color: #111;
+      color: #fff
+    }
+
+    .comment-ratings i {
+      color: #f6d151
+    }
+
+    .followers {
+      font-size: 9px;
+      color: #d6d4d4
+    }
+
+    .store-image {
+      width: 42px
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      background-color: grey;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px
+    }
+
+    .bullet-text {
+      font-size: 15px
+    }
+
+    .my-color {
+      margin-top: 10px;
+      margin-bottom: 10px
+    }
+
+    label.radio {
+      cursor: pointer
+    }
+
+    label.radio input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      pointer-events: none
+    }
+
+    label.radio span {
+      border: 2px solid #111;
+      display: inline-block;
+      color: #111;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      text-transform: uppercase;
+      transition: 0.5s all
+    }
+
+    label.radio .red {
+      background-color: red;
+      border-color: red
+    }
+
+    label.radio .blue {
+      background-color: blue;
+      border-color: blue
+    }
+
+    label.radio .green {
+      background-color: green;
+      border-color: green
+    }
+
+    label.radio .orange {
+      background-color: orange;
+      border-color: orange
+    }
+
+    label.radio input:checked+span {
+      color: #fff;
+      position: relative
+    }
+
+    label.radio input:checked+span::before {
+      opacity: 1;
+      content: '\2713';
+      position: absolute;
+      font-size: 13px;
+      font-weight: bold;
+      left: 4px
+    }
+
+    .reviewcard .card-body {
+      padding: 0.3rem 0.3rem 0.2rem
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .img-display {
+      overflow: hidden;
+    }
+
+    .img-showcase {
+      display: flex;
+      width: 100%;
+      transition: all 0.5s ease;
+    }
+
+    .img-showcase img {
+      min-width: 100%;
+    }
+
+    .img-select {
+      display: flex;
+    }
+
+    .img-item {
+      margin: 0.3rem;
+    }
+
+    .img-item:nth-child(1),
+    .img-item:nth-child(2),
+    .img-item:nth-child(3) {
+      margin-right: 0;
+    }
+
+    .img-item:hover {
+      opacity: 0.8;
+    }
+
+    .last-price span {
+      color: #f64749;
+      text-decoration: line-through;
+    }
+
+    .new-price span {
+      color: #000;
+      font-size: 32px;
+    }
+
+    .reviewcard {
+      width: 1200px;
+    }
+
+    /* dropdown */
+    .wrapper2 {
+      margin-top: 20px;
+
+    }
+
+    .panel-body li {
+      list-style-type: none;
+      width: 100%;
+    }
+
+    .panel-heading {
+      padding: 0;
+      border: 0;
+    }
+
+    .panel-title>a,
+    .panel-title>a:active {
+      display: block;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      word-spacing: 3px;
+      text-decoration: none;
+    }
+
+    .panel-heading .rotate {
+      float: right;
+      transition: all 0.5s;
+    }
+
+    .panel-heading.active .rotate {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+
+    /* radio */
+    /* hides the checkbox */
+    .heart input {
+      display: none;
+
+    }
+
+    /* changes the color when selected */
+    .heart input:checked~label {
+      color: red;
+
+    }
+
+
+
+    /* for styling purpose only */
+    .heart label {
+      font-size: 25px;
+      margin-left: 22px;
+    }
+    /* view */
+    .view-more-bttn {
+    text-align: center;
+    background-color: #111;
+    display: inline-flex;
+    padding: 7px 17px 7px!important;
+    font-size: 15px!important;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+  </style>
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="header">
+    <div class="container">
+        <div class="row v-center">
+            <div class="header-item item-left">
+                <div class="logo">
+                    <a href="#">logo</a>
+                </div>
+            </div>
+            <!-- menu start here -->
+            <div class="header-item item-center">
+                <div class="menu-overlay"></div>
+                <nav class="menu">
+                    <div class="mobile-menu-head">
+                        <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                        <div class="current-menu-title"></div>
+                        <div class="mobile-menu-close">&times;</div>
+                    </div>
+                    <ul class="menu-main">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                       
+                        <li class="menu-item-has-children">
+                            <a href="#">Shop <i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                                <div class="list-item">
+                                    <h4 class="title">Men's Fashion</h4>
+                                    <ul>
+                                        <li><a href="#">T-Shirts</a></li>
+                                        <li><a href="#">Jeans</a></li>
+                                        <li><a href="#">Suit</a></li>
+                                        <li><a href="#">Kurta</a></li>
+                                        <li><a href="#">Watch</a></li>
+                                    </ul>
+                                    <h4 class="title">Beauty</h4>
+                                    <ul>
+                                        <li><a href="#">Moisturizer</a></li>
+                                        <li><a href="#">Face powder</a></li>
+                                        <li><a href="#">Lipstick</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <h4 class="title">Women's Fashion</h4>
+                                    <ul>
+                                        <li><a href="#">Sarees</a></li>
+                                        <li><a href="#">Sandals</a></li>
+                                        <li><a href="#">Watchs</a></li>
+                                        <li><a href="#">Shoes</a></li>
+                                    </ul>
+                                    <h4 class="title">Furniture</h4>
+                                    <ul>
+                                        <li><a href="#">Chairs</a></li>
+                                        <li><a href="#">Tables</a></li>
+                                        <li><a href="#">Doors</a></li>
+                                        <li><a href="#">Bed</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <h4 class="title">Home, Kitchen</h4>
+                                    <ul>
+                                        <li><a href="#">Kettle</a></li>
+                                        <li><a href="#">Toaster</a></li>
+                                        <li><a href="#">Dishwasher</a></li>
+                                        <li><a href="#">Microwave oven</a></li>
+                                        <li><a href="#">Pitcher</a></li>
+                                        <li><a href="#">Blender</a></li>
+                                        <li><a href="#">Colander</a></li>
+                                        <li><a href="#">Tureen</a></li>
+                                        <li><a href="#">Cookware</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <img src="https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80"
+                                        alt="Chair" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- menu end here -->
+            <div class="header-item item-right">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <!-- mobile menu trigger -->
+                <div class="mobile-menu-trigger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+  <div class="container mt-2 mb-3">
+    <div class="row no-gutters">
+      <div class="col-md-5 pr-2">
+        <div class="product-imgs sticky-top">
+          <div class="img-display">
+            <div class="img-showcase">
+              <img src="images/G-1.jpg" alt="shoe image">
+              <img src="images/G-2.jpg" alt="shoe image">
+              <img src="images/G-1.jpg" alt="shoe image">
+              <img src="images/G-2.jpg" alt="shoe image">
+            </div>
+          </div>
+          <div class="img-select">
+            <div class="img-item">
+              <a href="#" data-id="1">
+                <img src="images/G-1.jpg" alt="shoe image">
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="2">
+                <img src="images/G-2.jpg" alt="shoe image">
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="3">
+                <img src="images/G-1.jpg" alt="shoe image">
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="4">
+                <img src="images/G-2.jpg" alt="shoe image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 container">
+        <div class="card ">
+          <div class="d-flex container flex-row align-items-center">
+            <div class="p-ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                class="fa fa-star"></i> </div> <span class="ml-1 Rating mr-1">5.0
+              Rating & 20 Reviews</span>
+          </div>
+          <div class="about container">
+            <h3><span class="font-weight-bold">English Man Charcoal Facewash </span></h3>
+            <!-- <h4 class="font-weight-bold">$3,444</h4> -->
+            <p class="new-price"><span><span>&#8377;</span>249.00</span> <sup><s style="font-size: 18px;"><span
+                    style="font-size: 18px;">&#8377;</span>249.00</s></sup></p>
+          </div>
+         
+
+
+          <div class="container" style=" margin-bottom:10px">
+            
+          <div class="shipping mt-2 container">
+            <p>Enter Pin to check delivery: </p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="6 digit Pincode" aria-label="6 digit Pincode"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-danger" type="button">Check</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons mt-2">
+          <button class="btn btn-outline-warning btn-long cart mt-2">Add to Cart</button>
+          <button class="btn btn-warning btn-long buy mt-2">Buy it Now</button>
+        </div>
+        <hr>
+        <div class="wrapper2 container center-block mb-4">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading active" role="tab" id="headingOne">
+                <h6 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Special Offers
+                    <div class="fa fa-chevron-up rotate"></div>
+                  </a>
+                </h6>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <li>
+                    <h6>Flat 200</h6>
+                    <p>Valid on orders more than Rs. 1800</p>
+                  </li>
+                  <li>
+                    <h6>Flat 200</h6>
+                    <p>Valid on orders more than Rs. 1800</p>
+                  </li>
+                  <li>
+                    <h6>Flat 200</h6>
+                    <p>Valid on orders more than Rs. 1800</p>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-description">
+
+          <!-- <div class="d-flex flex-row align-items-center"> <i class="fa fa-calendar-check-o"></i> <span
+                                class="ml-1">Delivery days</span> </div> -->
+          <div class="mt-2 container"> 
+            <span class="font-weight-bold">Description</span>
+            
+            <div class="bullets container">
+              <P class="mt-2 mb-0">Product Description:</P>
+              <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Best in
+                  Quality</span> </div>
+              <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Anti-creak
+                  joinery</span> </div>
+              <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Sturdy
+                  laminate surfaces</span> </div>
+              <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Relocation
+                  friendly design</span> </div>
+              <!-- <div class="d-flex align-items-center"> <span class="dot"></span> <span
+                                        class="bullet-text">High gloss, high style</span> </div>
+                                <div class="d-flex align-items-center"> <span class="dot"></span> <span
+                                        class="bullet-text">Easy-access hydraulic storage</span> </div> -->
+            </div>
+            <div class="bullets container">
+              <P class="mt-2 mb-0">Shipping Description:</P>
+              <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Best in
+                  Quality</span> </div>
+              <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Anti-creak
+                  joinery</span> </div>
+              <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Sturdy
+                  laminate surfaces</span> </div>
+              <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Relocation
+                  friendly design</span> </div>
+              <!-- <div class="d-flex align-items-center"> <span class="dot"></span> <span
+                                        class="bullet-text">High gloss, high style</span> </div>
+                                <div class="d-flex align-items-center"> <span class="dot"></span> <span
+                                        class="bullet-text">Easy-access hydraulic storage</span> </div> -->
+            </div>
+            </div>
+      
+          <!-- <div class="mt-2"> <span class="font-weight-bold">Store</span> </div>
+                        <div class="d-flex flex-row align-items-center"> <img src="https://i.imgur.com/N2fYgvD.png"
+                                class="rounded-circle store-image">
+                            <div class="d-flex flex-column ml-1 comment-profile">
+                                <div class="comment-ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span
+                                    class="username">Rare Boutique</span> <small class="followers">25K Followers</small>
+                            </div>
+                        </div> -->
+        </div>
+          <div class="row container no-gutters mt-2 mb-2">
+
+            <div class="card reviewcard mt-2">
+                <h4>Reviews</h4>
+                <div class="d-flex flex-row">
+                    <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                            class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span
+                        class="ml-1 font-weight-bold">4.6</span>
+                </div>
+                <hr>
+                <div class="badges"> <span class="badge bg-dark text-white ">All (230)</span>
+                         <span class="badge bg-dark text-white "> <i class="fa fa-image"></i> 23 </span> 
+                         <span class="badge bg-dark text-white"> <i class="fa fa-comments-o"></i> 23 </span> 
+                         <span class="badge bg-warning"><i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <span class="ml-1">2,123</span> </span> </div>
+                <hr>
+                <div class="comment-section">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-row align-items-center"> 
+                            <img src="images/G-1.jpg" class="rounded-circle profile-image">
+                            <div class="d-flex flex-column ml-1 comment-profile">
+                                <div class="comment-ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span
+                                    class="username">Lori Benneth</span>
+                            </div>
+                        </div>
+                        <div class="date"> <span class="text-muted">2 May</span> </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-row align-items-center">
+                             <img src="images/G-2.jpg" class="rounded-circle profile-image">
+                            <div class="d-flex flex-column ml-1 comment-profile">
+                                <div class="comment-ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span
+                                    class="username">Timona Simaung</span>
+                            </div>
+                        </div>
+                        <div class="date"> <span class="text-muted">12 May</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div id="reviews" class="prod-reviews container">
+            <div style="border: 1px solid #CFCFCF;border-radius:7px;">
+              <div class="row"
+                style="border-radius:7px;margin: 0 1px 1px;padding: 18px;background-color: #F3F3F3;text-align: center">
+                <div class="col" style="padding:0;color:#4D4D4D;font-weight:600;font-size: 18px;">
+                  Liked what you got?</div>
+                <div class="col " style="padding:0; float:right; color:#636466;font-size: 1.34rem;">
+                  <a href="#" style="text-decoration: none;">
+                    <div class="view-more-bttn" style=" padding: 7px 10px 7px!important;">WRITE A REVIEW</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container mt-2 mb-3">
+    <div class="row no-gutter">
+      <div class="card reviewcard mt-2"> <span>Similar Products:</span>
+        <div class="similar-products mt-2 d-flex flex-row">
+          <div class="card border p-1" style="width: calc(100%/5);margin-right: .5rem;">
+            <img
+              src="images/G-1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">$1,999</h6>
+            </div>
+          </div>
+          <div class="card border p-1" style="width: calc(100%/5);margin-right: .5rem;"> <img
+              src="images/G-2.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">$1,699</h6>
+            </div>
+          </div>
+          <div class="card border p-1" style="width: calc(100%/5);margin-right: .5rem;"> <img
+              src="images/G-1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">$2,999</h6>
+            </div>
+          </div>
+          <div class="card border p-1" style="width: calc(100%/5);margin-right: .5rem;">
+            <img
+              src="images/G-1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">$3,999</h6>
+            </div>
+          </div>
+          <div class="card border p-1" style="width: calc(100%/5);">
+            <img
+              src="images/G-1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">$999</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card reviewcard mt-2"> <span>You May Also Like:</span>
+        <div class="similar-products mt-2 d-flex flex-row">
+          <div class="card border p-1" style="width: calc(100%/5);margin-right: .5rem;">
+            <img
+              src="images/G-1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">$1,999</h6>
+            </div>
+          </div>
+          <div class="card border p-1" style="width: calc(100%/5);margin-right: .5rem;"> <img
+              src="images/G-1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">$1,699</h6>
+            </div>
+          </div>
+          <div class="card border p-1" style="width: calc(100%/5);margin-right: .5rem;"> <img
+              src="images/G-1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">$2,999</h6>
+            </div>
+          </div>
+          <div class="card border p-1" style="width: calc(100%/5);margin-right: .5rem;">
+            <img
+              src="images/G-1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">$3,999</h6>
+            </div>
+          </div>
+          <div class="card border p-1" style="width: calc(100%/5);">
+            <img
+              src="images/G-1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">$999</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ <!-- footer -->
+ <footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>1010 Avenue, sw 54321, chandigarh</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9876543210 0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>mail@info.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                            elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <!-- Optional JavaScript -->
+  <script type='text/javascript'>
+    const imgs = document.querySelectorAll('.img-select a');
+    const imgBtns = [...imgs];
+    let imgId = 1;
+
+    imgBtns.forEach((imgItem) => {
+      imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+      });
+    });
+
+    function slideImage() {
+      const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+      document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+    }
+
+    window.addEventListener('resize', slideImage);
+    // dropdown
+    $('.panel-collapse').on('show.bs.collapse', function () {
+      $(this).siblings('.panel-heading').addClass('active');
+    });
+
+    $('.panel-collapse').on('hide.bs.collapse', function () {
+      $(this).siblings('.panel-heading').removeClass('active');
+    });
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
